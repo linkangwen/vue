@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="vue-app">
+		<h1>v-if 条件</h1>
+
+			<!-- <button @click="error=!error">toggle error</button>
+			<button @click="success=!success">toggle successs</button>
+			<p v-if="error">网络错误：404</p>
+			<p v-else-if="success">网络成功：200</p> -->
+
+
+			<button @click="error=!error">toggle error</button>
+			<button @click="success=!success">toggle successs</button>
+			<p v-show="error">网络错误：404</p>
+			<p v-show="success">网络成功：200</p>
+
+	</div>
+	<script src="test6.js"></script>
+</body>
+</html>

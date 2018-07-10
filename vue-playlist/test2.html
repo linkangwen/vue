@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="vue-app">
+		<h1>双向数据绑定</h1>
+		<label>姓名：</label>
+		<input ref="name" type="text" v-model="name">
+		<span>{{name}}</span>
+		<label>年龄:</label>
+		<input ref="age" type="text"  v-model="age">
+		<span>{{age}}</span>
+	</div>
+	<script src="test2.js"></script>
+</body>
+</html>

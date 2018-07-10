@@ -1,0 +1,45 @@
+#canvas{
+	width: 600px;
+	padding: 200px 20px;
+	text-align: center;
+	border: 1px solid #333;
+}
+span{
+	background: red;
+	display: inline-block;
+	padding: 10px;
+	color: #fff;
+	margin: 10px 0;
+}
+.changColor span{
+	background: green;
+}
+.changLength span:after{
+	content: "length";
+	margin-left: 10px;
+}
+
+
+/*8*/
+#bag{
+	width: 1000px;
+	height: 800px;
+	margin: 0 auto;
+	background: url(images/1.jpg) center no-repeat;
+	background-size: 80%;
+}
+#bag.burst{
+	background: url(images/2.jpg) center no-repeat;
+}
+#bag-health{
+	width: 200px;
+	border: 2px #000 solid;
+	margin: 0 auto 20px auto;
+}
+#bag-health div{
+	height: 20px;
+	background: crimson;
+}
+#controls button{
+	margin-left: 20px;
+}

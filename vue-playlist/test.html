@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="vue-app">
+		<h1>en</h1>
+		<button @click.once="add(10)">涨10岁</button>
+		<button v-on:click="sub(10)">减10岁</button>
+		<p>my age is {{age}}</p>
+		<div id="canvas" v-on:mousemove="updateXY">
+			{{x}},{{y}}-<span @mousemove.stop="">stop moving</span>
+		</div>
+		<a @click.prevent="alert()" href="https://cn.vuejs.org/v2/guide/events.html">vue</a>
+	</div>
+	<script src="test.js"></script>
+</body>
+</html>
